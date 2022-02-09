@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(./images/pattern-background-desktop.svg);
+    background-color: var(--very-pale-blue);
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    font-weight: 700;
+}
+main {
+    width: 375px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+}
+
+p {
+    line-height: 1.6;
+    opacity: .5;
+    padding: 0px 2px 0 25px;
+}
+header {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+.header_image {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: auto;
+}
+.card_content {
+    padding: 25px;
+}
+h1 {
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+h1, .card_summary, .card_annual-plan, .card_payment  {
+    margin-bottom: 20px;
+}
+p {
+    padding: 0 25px ;
+}
+.card_annual-plan {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+}
+.music {
+    background-color: var(--desaturated-blue);
+    border-radius: 50%;
+}
+span {
+    display: block;
+}
+.data .c1 {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+.c2 {
+    opacity: .5;
+}
+.btn {
+    text-decoration: none;
+    display: block;
+}
+.card_payment{
+    background-color: var(--bright-blue);
+    padding: 15px;
+    color: var(--very-pale-blue);
+    border-radius: 15px;
+    box-shadow: 1px 7px 35px var(--desaturated-blue);
+}
+.change:hover {
+    color: var(--bright-blue);
+
+}
+.card_cancel:hover {
+    color: var(--dark-blue);
+}
