@@ -17,7 +17,7 @@ body, html {
     height: 100vh;
     font-family: 'Red Hat Display', sans-serif;
     background: url(./images/pattern-background-desktop.svg);
-    background-color: var(--very-pale-blue);
+    background-color: #e0e8ff;
     background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
@@ -37,7 +37,6 @@ main {
 
 p {
     line-height: 1.6;
-    opacity: .5;
     padding: 0px 2px 0 25px;
 }
 header {
@@ -81,9 +80,7 @@ span {
     color: var(--dark-blue);
     font-weight: 700;
 }
-.c2 {
-    opacity: .5;
-}
+
 .btn {
     text-decoration: none;
     display: block;
@@ -94,10 +91,14 @@ span {
     color: var(--very-pale-blue);
     border-radius: 15px;
     box-shadow: 1px 7px 35px var(--desaturated-blue);
+    margin-bottom: 30px;
 }
 .change:hover {
     color: var(--bright-blue);
 
+}
+.card_cancel, p, .c2 {
+    color: hsl(224, 23%, 55%);
 }
 .card_cancel:hover {
     color: var(--dark-blue);
